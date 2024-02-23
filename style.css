@@ -8,7 +8,6 @@
 }
 
 body{
-    font-size: 100%;
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
 }
 
@@ -34,6 +33,15 @@ body{
     color: #FFF2E7;
     font-weight: 400;
     font-size: 18px;
+}
+
+#icone-menu{ 
+    font-size: 30px;
+    color: #FFF2E7;
+    background-color: #8E5D52;
+    border: none;
+    display: none;
+
 }
 
 .conteudo{
@@ -123,50 +131,90 @@ body{
     margin: auto;
 }
 
-@media (max-width:414px){
+@media (max-width:937px){
+    .conteudo-principal{
+        padding: 0 8%;
+    }
+}
+
+
+@media (max-width:792px){
+
+    .conteudo-principal{
+        padding: 0 8%;
+    }
+    .cabecalho-menu-item{
+        display: none;
+    }
+
+    #icone-menu{ 
+        display: block;
+    }
+
+    .cabecalho{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contuedo-principal-escrito-titulo{
+        font-size: 50px;
+    }
+
+    .contuedo-principal-escrito-subtitulo{
+        font-size: 20px;
+    }
+    .contuedo-principal-escrito-botao{
+        width: 200px;
+    }
+    .conteudo-principal-imagem{
+        height: 400px;
+    }
+}
+
+@media (max-width:600px){
     body{
         padding: 20px;
+
     }
-    .cabecalho{
+
+    .cabecalho-menu-item{
         flex-direction: column;
         padding: 10px;
         gap: 10px;
+        display: none;
+    }
+
+    #icone-menu{ 
+        display: block;
+    }
+
+    .cabecalho{
+        justify-content: space-between;
+        align-items: center;
+        height: 65px;
+    }
+
+    .cabecalho-imagem{
+        height: 50px;
     }
 
     .conteudo-principal{
-        display: flex;
-        flex-direction: column;
-    }
-    .contuedo-principal-escrito-titulo{
-        display: flex;
-        justify-content: center;
-    }
-    .contuedo-principal-escrito-subtitulo{
-       text-align: justify;
+        flex-direction: column-reverse;
     }
 
-    .conteudo-secundario-paragrafo{
-        text-align: justify;
-    }
-    .cabecalho-menu{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .contuedo-principal-escrito-botao{
+    .contuedo-principal-escrito-titulo{
         text-align: center;
     }
-    .cabecalho-menu{
-        display: flex;
-        flex-direction: column;
+
+    .contuedo-principal-escrito{
+        align-items: center;
     }
 
-    .contuedo-principal-escrito-titulo{
-        margin-top: 15px;
+    .conteudo-principal-imagem{
+        height: 330px;
     }
 
-    .conteudo-secundario-titulo{
-        margin-top: 1   0px;
-
+    .conteudo-secundario{
+        text-align: center;
     }
-
+   
 }
